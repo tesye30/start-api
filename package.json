@@ -1,0 +1,14 @@
+{
+  "name": "start-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lucas couto <tesye30@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "typescript": "^4.4.3"
+  }
+}
