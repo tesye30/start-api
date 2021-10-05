@@ -1,8 +1,10 @@
-import express from 'express';
-import { createCourse } from './routes';
+import express, { response } from 'express';
+
 
 const app = express();
 
-app.get("/", createCourse);
+app.get("/", (request, response) =>{
+    return response.json( {message: "Hello Word!"});
+})
 
-app.listen(8080);
+app.listen(8080, () => console.log("Server is running!"));
