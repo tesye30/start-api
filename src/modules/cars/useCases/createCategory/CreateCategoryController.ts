@@ -10,7 +10,7 @@ class CreateCategoryController {
         
     }
 
-    handle(request: Request, response: Response) {
+    handle(request: Request, response: Response):Response {
         const { name, description } = request.body;
 
         this.createCategoryUseCase.execute({ name, description});
