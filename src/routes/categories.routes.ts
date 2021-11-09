@@ -7,7 +7,7 @@ import { listCategoriesController } from '../modules/cars/useCases/listCategorie
 const categoriesRoutes = Router();
 
 categoriesRoutes.post("/", (request, response) => {
-    return createCategoryController;
+    return createCategoryController.handle(request, response);
 });
 
 categoriesRoutes.get("/", (request, response) => {
